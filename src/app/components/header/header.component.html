@@ -7,11 +7,47 @@
     </div>
 
     <nav class="hidden md:flex justify-end space-x-6 md:space-x-4 lg:space-x-8 text-white font-semibold uppercase text-lg lg:text-lg xl:text-xl ml-5 mr-5 lg:ml-20 lg:mr-20">
-        <a routerLink="/">Home</a>
-        <a routerLink="tarifs">Tarifs</a>
-        <a routerLink="/">Our Services</a>
-        <a routerLink="/">Community</a>
+        <a routerLink="/" routerLinkActive="active" class="">Home</a>
+        <a routerLink="tarifs" routerLinkActive="active"class="">Tarifs</a>
+        <a routerLink="services" routerLinkActive="active">Our Services</a>
+        <a routerLink="community" routerLinkActive="active">Community</a>
     </nav>
+
+    <!-- Menu mobile button -->
+    <button 
+    (click)="toggleMobileMenu()"
+    class="md:hidden text-white text-2xl flex items-center" 
+    aria-label="Ouvrir le menu"
+    [attr.aria-expanded]="isMobileMenuOpen">
+        <img 
+        src="assets/icons/burger.svg" 
+        alt="Menu" 
+        class="w-14 h-14 filter invert" />
+    </button>
+
+    <!-- Menu mobile overlay -->
+    <div 
+    class="fixed inset-0 bg-main opacity-85 transition-transform duration-300 ease-in-out transform z-20"
+    [class.translate-y-0]="isMobileMenuOpen"
+    [class.-translate-y-full]="!isMobileMenuOpen">
+    
+        <!-- Bouton fermer -->
+        <button 
+            (click)="toggleMobileMenu()" 
+            class="absolute top-30 right-6 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <!-- Menu items -->
+        <nav class="flex flex-col justify-center items-center min-h-screen text-5xl font-semibold space-y-10" aria-label="Menu mobile ouvert" (click)="toggleMobileMenu()">
+            <a routerLink="/" routerLinkActive="active">Home</a>
+            <a routerLink="tarifs" routerLinkActive="active">Tarifs</a>
+            <a routerLink="services" routerLinkActive="active">Our Services</a>
+            <a routerLink="community" routerLinkActive="active">Community</a>
+        </nav>
+    </div>
 
 </div>
 

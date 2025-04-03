@@ -1,21 +1,21 @@
 <!-- Hero-->
 <section class="m-5">
-  <div class="bg-[url(/assets/images/exam1.jpg)] bg-no-repeat bg-cover bg-center p-4 w-full">
-    
-    <div class="p-2 absolute text-white uppercase">
-        <h1 class="">Travaillez intelligemment, collaborez partout</h1>
+  <div class="relative w-full h-screen bg-cover bg-center" style="background-image: url('assets/images/exam5.webp');">
+    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-600 to-transparent opacity-50"></div>
+    <div class="flex justify-center items-center h-full relative z-10">
+        <h1 class="text-white text-center uppercase font-extrabold text-5xl sm:text-6xl lg:text-7xl">Travaillez <br> intelligemment,<br> collaborez partout</h1>
     </div>
-    
   </div>
 </section>
+
 
 
 <!-- Worksphere-->
 <section class="mt-[50px]">
   <div class="w-9/12 mx-auto py-10">
-    <h2 class="">Pourquoi choisir WorkSphere ?</h2>
+    <h2 class="text-center md:text-left mb-5">Pourquoi choisir WorkSphere ?</h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
         <app-card-work *ngFor="let workElement of workElements" [data]="workElement"></app-card-work>
     </div>
 
@@ -23,7 +23,7 @@
 </section>
 
 <!-- Outils-->
-<section class="mt-[50px] pt-[50px] bg-gray-200">
+<section class="mt-[50px] py-[50px] bg-gray-200">
     <div class="w-9/12 mx-auto py-10">
   
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

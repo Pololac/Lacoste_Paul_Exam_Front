@@ -13,10 +13,10 @@ import { NgForOf } from '@angular/common';
 export class HomeComponent {
   
   workElements = [
-    { imageUrl: 'assets/images/exam1.jpg', title: 'Productivité maximale', contenu: 'Lorem ipsum dolor sit amet. Ut tempore' },
-    { imageUrl: 'assets/images/exam2.jpg', title: 'Collaboration facile', contenu: 'Lorem ipsum dolor sit amet. Ut tempore' },
-    { imageUrl: 'assets/images/exam3.jpg', title: 'Sécurité garantie ', contenu: 'Lorem ipsum dolor sit amet. Ut tempore' },
-    { imageUrl: 'assets/images/exam4.jpg', title: 'Accessible partout', contenu: 'Lorem ipsum dolor sit amet. Ut tempore' },
+    { imageUrl: 'assets/images/exam1.webp', title: 'Productivité maximale', contenu: 'Lorem ipsum dolor sit amet. Ut tempore' },
+    { imageUrl: 'assets/images/exam2.webp', title: 'Collaboration facile', contenu: 'Lorem ipsum dolor sit amet. Ut tempore' },
+    { imageUrl: 'assets/images/exam3.webp', title: 'Sécurité garantie ', contenu: 'Lorem ipsum dolor sit amet. Ut tempore' },
+    { imageUrl: 'assets/images/exam4.webp', title: 'Accessible partout', contenu: 'Lorem ipsum dolor sit amet. Ut tempore' },
   ];
   
   
