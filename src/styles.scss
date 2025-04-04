@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 }
 
- h2 {
+h2 {
     font-size: 40px;
     font-weight: 900;
     @apply text-gray-900;
@@ -39,10 +39,12 @@ p {
 
 li a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 nav a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .active {
@@ -68,6 +70,7 @@ nav a:hover {
 }        
 
 .btn:hover {
+    cursor: pointer;
     @apply text-white bg-teal-600 border-2 border-white;
 }
 
